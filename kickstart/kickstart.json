@@ -79,6 +79,7 @@
                     "email": "#{userEmail}",
                     "firstName": "Richard",
                     "lastName": "Hendricks",
+                    "fullName": "Richard Hendricks",
                     "password": "#{userPassword}"
                 },
                 "registration": {
