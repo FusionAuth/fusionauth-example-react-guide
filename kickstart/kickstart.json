@@ -53,9 +53,9 @@
               "application": {
                 "name": "Example app",
                 "oauthConfiguration" : {
-                    "authorizedRedirectURLs": ["http://localhost:5000/oauth-callback"],
+                    "authorizedRedirectURLs": ["http://localhost:5173"],
                     "clientSecret": "super-secret-secret-that-should-be-regenerated-for-production",
-                    "logoutURL": "http://localhost:5000/logout",
+                    "logoutURL": "http://localhost:5173/logout",
                     "enabledGrants": ["authorization_code"],
                     "requireRegistration" : true
                 },
@@ -84,6 +84,43 @@
                 "registration": {
                     "applicationId": "#{applicationId}"
                 }
+            }
+        },
+        {
+            "method": "PATCH",
+            "url": "/api/system-configuration",
+            "body": {
+              "systemConfiguration": {
+                "corsConfiguration": {
+                  "allowCredentials": true,
+                  "allowedHeaders": [
+                    "Accept",
+                    "Access-Control-Request-Headers",
+                    "Access-Control-Request-Method",
+                    "X-Requested-With",
+                    "Authorization",
+                    "Content-Type",
+                    "Last-Modified",
+                    "Origin"
+                  ],
+                  "allowedMethods": [
+                    "PUT",
+                    "GET",
+                    "POST",
+                    "OPTIONS"
+                  ],
+                  "allowedOrigins": [
+                    "http://localhost:5173"
+                  ],
+                  "debug": false,
+                  "enabled": true,
+                  "exposedHeaders": [
+                    "Access-Control-Allow-Origin",
+                    "Access-Control-Allow-Credential"
+                  ],
+                  "preflightMaxAgeInSeconds": 0
+                }
+              }
             }
         }
     ]
