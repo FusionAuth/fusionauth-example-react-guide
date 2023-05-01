@@ -18,13 +18,6 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
 
-  web:
-    build: .
-    ports:
-      - 5001:5000
-    volumes:
-      - .:/code
-
   search:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
     environment:
