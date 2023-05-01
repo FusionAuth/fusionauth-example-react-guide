@@ -13,7 +13,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 * `git clone https://github.com/FusionAuth/fusionauth-example-react-guide`
 * `cd fusionauth-example-react-guide`
-* `docker-compose up` (this will block the current terminal, so open a new one)
+* `docker compose up` (this will block the current terminal, so open a new one)
 * `npm install`
 
 
