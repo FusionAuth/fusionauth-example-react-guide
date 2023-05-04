@@ -3,6 +3,8 @@ This project contains an example project that illustrates using FusionAuth with 
 
 This uses [vite](https://vitejs.dev/) to create a minimal react project.
 
+If you'd rather use an Express backend for additional flexibility, please visit [our React sample application with an Express backend](https://github.com/fusionauth/fusionauth-example-react-sdk) repo.
+
 ## Prerequisites
 You will need the following things properly installed on your computer.
 
