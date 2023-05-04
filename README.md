@@ -36,3 +36,6 @@ You can also register a new user for this application and will be automatically 
 
 Log into the [FusionAuth admin screen](http://localhost:9011) with a different browser or incognito window using the admin user credentials ("admin@example.com"/"password") to explore the admin user experience.
 
+## Additional Resources
+
+You can work through a tutorial here: https://fusionauth.io/docs/v1/tech/tutorials/integrate-react
